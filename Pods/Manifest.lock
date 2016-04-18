@@ -1,0 +1,17 @@
+PODS:
+  - LCActionSheet (1.2.1)
+  - SDWebImage (3.7.5):
+    - SDWebImage/Core (= 3.7.5)
+  - SDWebImage/Core (3.7.5)
+
+DEPENDENCIES:
+  - LCActionSheet (~> 1.2.1)
+  - SDWebImage (~> 3.7.5)
+
+SPEC CHECKSUMS:
+  LCActionSheet: 1a1c891ef6589c29c5964a8d89c47ecd980438d7
+  SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
+
+PODFILE CHECKSUM: f7edd156dca90e17433059266b1d1d94b3b2ceb7
+
+COCOAPODS: 1.0.0.beta.8
