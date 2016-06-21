@@ -120,6 +120,7 @@ View.layer.borderWidth = BorderWidth;
     if (imagesArr.count>0) {
         switch (imagesArr.count) {
             case 1:{
+                //.....
                 _btnHeader.hidden=YES;
                 
                 id image=imagesArr[0];
