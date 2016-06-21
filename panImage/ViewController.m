@@ -226,23 +226,27 @@
         
         if (imgTag>0) {
             if ([[_headerImagesView viewWithTag:imgTag] isKindOfClass:[UIImageView class]]) {
-                NSLog(@"imgTag--%ld----endPoint--%@",imgTag,NSStringFromCGPoint(recognizerPoint));
+//                JALog(@"imgTag--%ld----endPoint--%@",imgTag,NSStringFromCGPoint(recognizerPoint));
                 UIImageView*other=[_headerImagesView viewWithTag:imgTag];
-                NSLog(@"nextimage-x-%.5f-width-%.5f---height--%.5f-imgTag--%ld----center-%@",other.frame.origin.x,other.frame.size.width,other.frame.size.height,imgTag,NSStringFromCGPoint(other.center));
+//                JALog(@"nextimage-x-%.5f-width-%.5f---height--%.5f-imgTag--%ld----center-%@",other.frame.origin.x,other.frame.size.width,other.frame.size.height,imgTag,NSStringFromCGPoint(other.center));
                 CGRect frameNewEnd=other.frame;
-                if (frameNewEnd.origin.x<0&&frameNewEnd.origin.y<0&&CGSizeEqualToSize(frameNewEnd.size, BigRect.size)) {
+                if (CGSizeEqualToSize(frameNewEnd.size, BigRect.size)) {
                     frameNewEnd=BigRect;
                 }
-               
+                
+                
                 
                 other.frame=oldframe;
                 recogn.frame=frameNewEnd;
                 [_imagesUrlArr exchangeObjectAtIndex:recogn.tag-10 withObjectAtIndex:imgTag-10];
+//                [_QiNiuImagesArr exchangeObjectAtIndex:recogn.tag-10 withObjectAtIndex:imgTag-10];
                 other.tag=recogn.tag;
                 recogn.tag=imgTag;
                 //                JALog(@"arrChanges--%@",_imagesUrlArr);
                 [_headerImagesView resetSubImagesWithImageArr:_imagesUrlArr];
                 [self resetHeaderImageTap];
+//                JALog(@"frame--new--%@",NSStringFromCGRect(frameNewEnd));
+//                JALog(@"oldFrame--%@",NSStringFromCGRect(oldframe));
                 
             }
             
@@ -256,6 +260,7 @@
             
             [self resetHeaderImageTap];
         }
+        valuePoint=CGPointZero;
 
         frameNew=CGRectNull;
         
