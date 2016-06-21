@@ -126,7 +126,8 @@ View.layer.borderWidth = BorderWidth;
                 
                 if ([image isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageheader sd_setImageWithURL:[NSURL URLWithString:image]];
+                    [imageheader sd_setImageWithURL:[NSURL URLWithString:image] placeholderImage:[UIImage imageNamed:@"分享图标"]];
+                    
                     
                 }else if ([image isKindOfClass:[UIImage class]]){
                     //image
@@ -143,7 +144,7 @@ View.layer.borderWidth = BorderWidth;
                 id image=imagesArr[0];
                 if ([image isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageheader sd_setImageWithURL:[NSURL URLWithString:image]];
+                    [imageheader sd_setImageWithURL:[NSURL URLWithString:image] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image isKindOfClass:[UIImage class]]){
                     //image
                     imageheader.image=image;
@@ -151,7 +152,7 @@ View.layer.borderWidth = BorderWidth;
                 id image1=imagesArr[1];
                 if ([image1 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageOne sd_setImageWithURL:[NSURL URLWithString:image1]];
+                    [imageOne sd_setImageWithURL:[NSURL URLWithString:image1] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image1 isKindOfClass:[UIImage class]]){
                     //image
                     imageOne.image=image1;
@@ -167,7 +168,7 @@ View.layer.borderWidth = BorderWidth;
                 id image=imagesArr[0];
                 if ([image isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageheader sd_setImageWithURL:[NSURL URLWithString:image]];
+                    [imageheader sd_setImageWithURL:[NSURL URLWithString:image] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image isKindOfClass:[UIImage class]]){
                     //image
                     imageheader.image=image;
@@ -175,7 +176,7 @@ View.layer.borderWidth = BorderWidth;
                 id image1=imagesArr[1];
                 if ([image1 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageOne sd_setImageWithURL:[NSURL URLWithString:image1]];
+                    [imageOne sd_setImageWithURL:[NSURL URLWithString:image1] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image1 isKindOfClass:[UIImage class]]){
                     //image
                     imageOne.image=image1;
@@ -183,7 +184,7 @@ View.layer.borderWidth = BorderWidth;
                 id image2=imagesArr[2];
                 if ([image2 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imagetwo sd_setImageWithURL:[NSURL URLWithString:image2]];
+                    [imagetwo sd_setImageWithURL:[NSURL URLWithString:image2] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image2 isKindOfClass:[UIImage class]]){
                     //image
                     imagetwo.image=image2;
@@ -201,7 +202,7 @@ View.layer.borderWidth = BorderWidth;
                 id image=imagesArr[0];
                 if ([image isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageheader sd_setImageWithURL:[NSURL URLWithString:image]];
+                    [imageheader sd_setImageWithURL:[NSURL URLWithString:image] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image isKindOfClass:[UIImage class]]){
                     //image
                     imageheader.image=image;
@@ -209,7 +210,7 @@ View.layer.borderWidth = BorderWidth;
                 id image1=imagesArr[1];
                 if ([image1 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageOne sd_setImageWithURL:[NSURL URLWithString:image1]];
+                    [imageOne sd_setImageWithURL:[NSURL URLWithString:image1] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image1 isKindOfClass:[UIImage class]]){
                     //image
                     imageOne.image=image1;
@@ -217,7 +218,7 @@ View.layer.borderWidth = BorderWidth;
                 id image2=imagesArr[2];
                 if ([image2 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imagetwo sd_setImageWithURL:[NSURL URLWithString:image2]];
+                    [imagetwo sd_setImageWithURL:[NSURL URLWithString:image2] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image2 isKindOfClass:[UIImage class]]){
                     //image
                     imagetwo.image=image2;
@@ -225,7 +226,7 @@ View.layer.borderWidth = BorderWidth;
                 id image3=imagesArr[3];
                 if ([image3 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageThree sd_setImageWithURL:[NSURL URLWithString:image3]];
+                    [imageThree sd_setImageWithURL:[NSURL URLWithString:image3] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image3 isKindOfClass:[UIImage class]]){
                     //image
                     imageThree.image=image3;
@@ -243,7 +244,7 @@ View.layer.borderWidth = BorderWidth;
                 id image=imagesArr[0];
                 if ([image isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageheader sd_setImageWithURL:[NSURL URLWithString:image]];
+                    [imageheader sd_setImageWithURL:[NSURL URLWithString:image] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image isKindOfClass:[UIImage class]]){
                     //image
                     imageheader.image=image;
@@ -251,7 +252,7 @@ View.layer.borderWidth = BorderWidth;
                 id image1=imagesArr[1];
                 if ([image1 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageOne sd_setImageWithURL:[NSURL URLWithString:image1]];
+                    [imageOne sd_setImageWithURL:[NSURL URLWithString:image1] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image1 isKindOfClass:[UIImage class]]){
                     //image
                     imageOne.image=image1;
@@ -259,7 +260,7 @@ View.layer.borderWidth = BorderWidth;
                 id image2=imagesArr[2];
                 if ([image2 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imagetwo sd_setImageWithURL:[NSURL URLWithString:image2]];
+                    [imagetwo sd_setImageWithURL:[NSURL URLWithString:image2] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image2 isKindOfClass:[UIImage class]]){
                     //image
                     imagetwo.image=image2;
@@ -267,7 +268,7 @@ View.layer.borderWidth = BorderWidth;
                 id image3=imagesArr[3];
                 if ([image3 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageThree sd_setImageWithURL:[NSURL URLWithString:image3]];
+                    [imageThree sd_setImageWithURL:[NSURL URLWithString:image3] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image3 isKindOfClass:[UIImage class]]){
                     //image
                     imageThree.image=image3;
@@ -295,7 +296,7 @@ View.layer.borderWidth = BorderWidth;
                 id image=imagesArr[0];
                 if ([image isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageheader sd_setImageWithURL:[NSURL URLWithString:image]];
+                    [imageheader sd_setImageWithURL:[NSURL URLWithString:image] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image isKindOfClass:[UIImage class]]){
                     //image
                     imageheader.image=image;
@@ -303,7 +304,7 @@ View.layer.borderWidth = BorderWidth;
                 id image1=imagesArr[1];
                 if ([image1 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageOne sd_setImageWithURL:[NSURL URLWithString:image1]];
+                    [imageOne sd_setImageWithURL:[NSURL URLWithString:image1] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image1 isKindOfClass:[UIImage class]]){
                     //image
                     imageOne.image=image1;
@@ -311,7 +312,7 @@ View.layer.borderWidth = BorderWidth;
                 id image2=imagesArr[2];
                 if ([image2 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imagetwo sd_setImageWithURL:[NSURL URLWithString:image2]];
+                    [imagetwo sd_setImageWithURL:[NSURL URLWithString:image2] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image2 isKindOfClass:[UIImage class]]){
                     //image
                     imagetwo.image=image2;
@@ -319,7 +320,7 @@ View.layer.borderWidth = BorderWidth;
                 id image3=imagesArr[3];
                 if ([image3 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageThree sd_setImageWithURL:[NSURL URLWithString:image3]];
+                    [imageThree sd_setImageWithURL:[NSURL URLWithString:image3] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image3 isKindOfClass:[UIImage class]]){
                     //image
                     imageThree.image=image3;
@@ -327,7 +328,7 @@ View.layer.borderWidth = BorderWidth;
                 id image4=imagesArr[4];
                 if ([image4 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imageFour sd_setImageWithURL:[NSURL URLWithString:image4]];
+                    [imageFour sd_setImageWithURL:[NSURL URLWithString:image4] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image4 isKindOfClass:[UIImage class]]){
                     //image
                     imageFour.image=image4;
@@ -335,7 +336,7 @@ View.layer.borderWidth = BorderWidth;
                 id image5=imagesArr[5];
                 if ([image5 isKindOfClass:[NSString class]]) {
                     //url 加载图片
-                    [imagefive sd_setImageWithURL:[NSURL URLWithString:image5]];
+                    [imagefive sd_setImageWithURL:[NSURL URLWithString:image5] placeholderImage:[UIImage imageNamed:@"120-1"]];
                 }else if ([image5 isKindOfClass:[UIImage class]]){
                     //image
                     imagefive.image=image5;
