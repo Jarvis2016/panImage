@@ -32,7 +32,7 @@
       _headerImagesView=[[CGUserImageView alloc]initWithFrame:CGRectMake(0, 64, SCREEN_Width, SCREEN_Width)];
     [_headerImagesView resetSubImagesWithImageArr:_imagesUrlArr];
     [self.view addSubview:_headerImagesView];
-    [self resetHeaderImageTap];
+    [self resetHeaderImageTap];//
     // Do any additional setup after loading the view, typically from a nib.
 }
 -(void)resetHeaderImageTap
