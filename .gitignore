@@ -19,8 +19,6 @@ DerivedData
 *.ipa
 *.xcuserstate
 
-.DS_Store
-
 *.xcbkptlist
 
 “.gitignore” 24L, 280c
